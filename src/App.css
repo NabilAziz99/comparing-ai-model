@@ -1,0 +1,162 @@
+.App {  
+  background: linear-gradient(to bottom, #0984e3, #e84393);
+
+  min-height: 100vh;
+  padding-left: 5em;
+  padding-right: 5em;
+  color: white;
+}
+
+.App-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: calc(10px + 7vmin);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* FieldPlaceholder will align all the div elements to the center */
+.FieldPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.FieldPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserInputFields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.ContextSimiliarityOutput {
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.SimiliarityTextOutput {
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.AboutSection {
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.AboutSection ul{
+  list-style: none;
+}
+
+.UserInputFields > * {
+  margin-right: 10px;
+}
+
+.SubmitButton {
+  margin-bottom: 40px;
+}
+
+.OutputFields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.OutputFields>* {
+  margin-bottom: 5em;
+}
+
+/*Add a space between each .OuputField divs besides the last one*/
+.OutputFields>*:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*On medium screens, the .OutputFields divs will be stacked on top of each other*/
+@media (max-width: 950px) {
+  .App { 
+    min-height: 100vh;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    color: white;
+  }
+
+  .App-header h1 {
+    font-size: 5.5vmin
+  }
+
+  h1 {
+    font-size: 7vmin;
+    margin-bottom: 0;
+  }
+
+  .OutputFields {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .OutputFields>*:not(:last-child) {
+    margin-bottom: 2em;
+    margin-right: 0;
+  }
+
+  .AboutSection h1 {
+    text-align: center;
+  }
+
+  ul li {
+    list-style: none;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px 0 rgba(242, 239, 239, 0.2);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  ul li h2 {
+    text-align: center;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
