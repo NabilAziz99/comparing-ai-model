@@ -48,7 +48,7 @@ function App() {
 
       <div className='footer'>
         <p>
-          <i>Created by: Amado Lazo, CJ, and Nabil</i>
+          <i>Created by: Nabil Abdelaziz Ferhat Taleb</i>
         </p>
       </div>
     </div>
